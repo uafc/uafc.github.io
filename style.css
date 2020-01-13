@@ -1,0 +1,366 @@
+body{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to left, #f0f0f0, #dfdbd6);
+}
+
+body{
+    background:url(img/background.gif);
+    height: auto;
+    width: auto;
+    background-size: 100% 100%;
+    
+}
+
+/* Global */
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.button_1{
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
+.dark{
+    padding: 15px;
+    background: #35424a;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Header */
+header{
+    background: linear-gradient(to bottom, #ffffff, #f1f1f1);
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a{
+    color: #919191;
+    text-decoration: none;
+}
+
+header a:not(#title){
+    font-size: 16px;
+    text-transform: uppercase;
+}
+header #title a{
+    color: #ffffff;
+    text-decoration:none;
+}
+
+header li{
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin:0;
+}
+
+header nav{
+    float:right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    font-weight: bold;
+    color: #e8491d;
+}
+
+header a:hover:not(#title){
+    color: #dfdb13;
+}
+
+/* Showcase */
+
+#showcase{
+    text-align: center;
+    color: #443a33;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size: 20px;
+}
+
+/* Confirmation */
+#confirmation{
+    padding: 15px;
+    color: #ffffff;
+    background: #00e927;
+    display: none;
+}
+
+#waiting{
+    padding: 15px;
+    color: #ffffff;
+    background: #d4d800;
+    display: none;
+}
+
+#denial{
+    padding: 15px;
+    color: #ffffff;
+    background: #ff0000;
+    display: none;
+}
+
+#denialtext, #confirmationtext, #waitingtext{
+    float: left;
+}
+
+#denialbutton{
+    float:right;
+    min-width: 6%;
+    background-color: #b6b6b6;
+}
+
+#linkoutput{
+    width:75%;
+    float:left;
+    padding: 18px;
+}
+
+#linkoutputdiv{
+    margin-top: 50px;
+}
+/*Boxes */
+
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float:left;
+    width: 23%;
+    padding: 10px;
+    text-align: center;
+}
+
+#boxes .box img{
+    width: 90px;
+    height: 90px;
+}
+
+.displayimages img{
+    width: 100%;
+}
+
+/*Sidebar*/
+
+aside#sidebar{
+    float:right;
+    width:30%;
+    margin-top: 10px;
+    
+}
+
+/* Main Col */
+
+article#main-col{
+    float: left;
+    width: 65%;
+    margin-top: 20px;
+    padding: 20px;
+    
+
+}
+article#vertical-main-col{
+    width: 80%;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    
+
+}
+
+.dark img{
+    width: 100%;
+    
+}
+
+/*Services*/
+ul#projects li{
+    list-style: none;
+    padding: 20px;
+    border: #e8491d solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+}
+ul#projects li#aversion:hover{
+    height: 350px;
+    background: url(/img/aversion.webp);
+    background-size: 100% 100%;
+}
+ul#projects li#rolltheball:hover{
+    height: 350px;
+    background: url(/img/rolltheballgifwebp.webp);
+    background-size: 100% 100%;
+}
+ul#projects li#randomlinkredirector:hover{
+    height: 350px;
+    background: url(/img/randomlinkredirector.gif) 10px 150px;
+    background-size: 100% 100%;
+}
+ul#projects li#buildingrunner:hover{
+    height: 350px;
+    background: url(/img/buildingrunner.webp) no-repeat center;
+    background-size: 50% 100%;
+}
+ul#vertical-projects li{
+    list-style: none;
+    padding: 20px;
+    margin: 10px;
+    border: #e8491d solid 1px;
+    background: #e6e6e6;
+    width: 21%;
+    min-width: 275px;
+    float: right;
+    height: 300px;
+}
+ul#vertical-projects li:hover{
+    opacity: 0.7;
+    color: rgb(121, 78, 0);
+}
+ul#vertical-projects li#contact-main{
+
+    background: url(/img/logocontact_gifupdated.gif) no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    opacity: 0.9;
+    
+}
+ul#vertical-projects li#about-main{
+
+    background: url(/img/about.gif) no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    
+}
+ul#vertical-projects li#projects-main{
+
+    background: url(/img/projects.gif) no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    
+}
+/*Contact form */
+
+.quote input, .quote textarea{
+    width:70%;
+    padding: 5px;
+
+}
+
+.container .contact{
+    border: 1px solid;
+    background: linear-gradient(to right, #f0f0f0, #dfdbd6);
+    padding: 50px;
+    text-align: center;
+    box-shadow: 20px 20px 20px 10px #888888;
+    transition: box-shadow 3s ease-in-out;
+    border: #e8491d solid 1px;
+}
+
+#contactoverlay{
+    padding: 50px;
+}
+
+.page-title{
+    font-size: 30px;
+}
+
+/* Random Link Redirector */
+#folderlinks{
+    margin: 10px 0 0 0;
+    min-height: 80px;
+}
+
+#randomlink{
+    text-align: center;
+}
+#rolltheballdiv{
+    background-color: rgba(230,230,230,0.9);
+    padding: 10px;
+}
+
+/* Media Queries */
+
+/* Media Queries */
+@media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar, #linkoutput{
+      float:none;
+      text-align:center;
+      width:94%;
+    }
+
+    header li{
+        display: inline;
+        padding: 0 10px 0 10px;
+    }
+  
+    header{
+      padding-bottom:20px;
+    }
+  
+    #showcase h1{
+      margin-top:40px;
+    }
+  
+    #newsletter button, .contact button{
+      display:block;
+      width:100%;
+    }
+  
+    #newsletter form input[type="email"], .contact input, .contact textarea{
+      width:100%;
+      margin-bottom:5px;
+    }
+    #contactoverlay{
+        padding: 25px 0 0 0;
+    }
+    #linkoutputdiv{
+        padding-right: 35px;
+    }
+    
+  }
