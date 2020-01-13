@@ -22,7 +22,7 @@ function contact_us(){
         if(document.getElementById("message_area").value.trim() == ""){
     
             $(document).ready(function(){
-                document.getElementById("denialtext").innerHTML = "❌ No message included!"
+                document.getElementById("denialtext").innerHTML = "❌ No faculty included!"
                 $("#confirmation").slideUp();
                 $("#denial").slideDown();
               });
