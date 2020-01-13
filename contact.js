@@ -30,7 +30,7 @@ function contact_us(){
         }
         else{
             $.ajax({
-                url: "https://script.google.com/macros/s/AKfycbyb2E3kgUvkuK7d4OGIsQ8KkrD4ZUTsW3i0ytYjsg/exec",
+                url: "https://script.google.com/macros/s/AKfycbxkhsFM8U4vf0b-3T8Gf897-Hms0suFAORLUCOV_mi5iVicc-mX/exec",
                 type: "POST",
                 data: data,
                 success: function(response){
