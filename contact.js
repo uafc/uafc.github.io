@@ -43,6 +43,8 @@ function contact_us(){
                             document.getElementById("name_contact").value = "";
                             document.getElementById("email_contact").value = "";
                             document.getElementById("message_area").value = "";
+                            document.getElementById("expertise_interest").value = "";
+                            document.getElementById("commitment_level").value = "";
                           });
     
                     }
