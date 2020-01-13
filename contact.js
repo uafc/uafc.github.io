@@ -36,7 +36,7 @@ function contact_us(){
                 success: function(response){
                     if(response != null){
                         $(document).ready(function(){
-                            document.getElementById("confirmationtext").innerHTML = "✔ Message Sent!"
+                            document.getElementById("confirmationtext").innerHTML = "✔ Signed Up!"
                             $("#denial").slideUp();
                             $("#waiting").slideUp();
                             $("#confirmation").slideDown();
@@ -48,7 +48,7 @@ function contact_us(){
                     }
                     else{
                         $(document).ready(function(){
-                            document.getElementById("denialtext").innerHTML = "❌ Your message was not sent. Please try again."
+                            document.getElementById("denialtext").innerHTML = "❌ Signup Failed. Please try again."
                             $("#denial").slideDown();
                           });
                         
