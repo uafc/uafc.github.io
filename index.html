@@ -12,4 +12,109 @@
 <body>
     <p>Hello</p>
 </body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Faris Kazmi | Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel = "icon" href =  
+"/img/logo_website.png" 
+        type = "image/x-icon"> 
+        <style>
+            #name_contact, #email_contact, #message_area{
+                margin: 10px;
+            }
+
+            body{
+                background:url(img/background.gif);
+                height: auto;
+                width: auto;
+                background-size: 100% 100%;
+                
+            }
+        
+        </style>
+</head>
+<body>
+    <header>
+        <div class = "container">
+            <div id="branding">
+                <h1><a id="title" href="/index.html"><span class="highlight">Faris</span> Kazmi</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects/projects.html">Projects</a></li>
+                    <li class="current"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <section id="confirmation">
+        <div class="container">
+            <h1 id="confirmationtext">✔ Thanks for sending me a message </h1>
+            <button id="denialbutton" onclick="closebutton('#confirmation')"><h2>Ok</h2></button>
+        </div>
+    </section>
+
+    <section id="denial">
+        <div class="container">
+            <h1 id="denialtext">❌ No email entered! </h1>
+            <button id="denialbutton" onclick="closebutton('#denial')"><h2>Ok</h2></button>
+        </div>
+    </section>
+
+    <section id="waiting">
+        <div class="container">
+            <h1 id="waitingtext">⌛ Sending message...  </h1>
+            <button id="denialbutton" onclick="closebutton('#denial')"><h2>Ok</h2></button>
+        </div>
+    </section>
+
+    
+
+    <section id="main">
+        <div class="container">
+
+            <div id="contactoverlay">
+                <div class="contact">
+                <h1>Contact Me</h1>
+               <hr>
+                <form id="gform" name="algoForm" class="quote">
+                    <div>
+                            <label>Name</label>
+                            <br>
+                            <input id="name_contact" name="name" type="text" placeholder="Name">
+                        </div>
+                        <div>
+                            <label>Email</label>
+                            <br>
+                            <input id="email_contact" name="email" type="email" placeholder="Email Address">
+                        </div>
+                        <div>
+                            <label>Message</label>
+                            <br>
+
+                        <textarea name="message" id="message_area" placeholder="Message" rows="5"></textarea>
+                    </div>
+                    <button class="button_1" type="button" id = "contact" onclick="contact_us()">Send</button>
+                    
+                </form>
+            </div>
+        </div>
+
+
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="contact.js"></script>
+    
+</body>
 </html>
