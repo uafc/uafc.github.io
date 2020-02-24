@@ -1,11 +1,11 @@
 // LED Pin locations
-#define Player1LED 7
-#define Player2LED 9
-#define MiddleLED 8
+#define Player1LED 10
+#define Player2LED 8
+#define MiddleLED 9
 
 // Button Pin locations
-#define Player1Button 11
-#define Player2Button 12
+#define Player1Button 7
+#define Player2Button 6
  
 void setup() {
   // configure LED pins to be a digital outputs
