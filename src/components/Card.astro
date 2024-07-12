@@ -8,17 +8,14 @@ interface Props {
 const { href, title, body } = Astro.props;
 ---
 
-<div class="max-w-sm rounded overflow-hidden shadow-lg bg-white p-6">
+<div class="max-w-sm rounded-xl border overflow-hidden bg-blue-300 p-6">
   <div>
-    <h2 class="text-lg font-bold">
-      {title}
-    </h2>
-    <p>
-      {body}
-    </p>
     <a class="underline text-blue-600" href={href}
-      >Link
+      >{title}
       <span>&rarr;</span>
     </a>
+    <p class="text-white">
+      {body}
+    </p>
   </div>
 </div>

@@ -5,11 +5,18 @@ import Card from "../components/Card.astro";
 
 <Layout title="Future Creators Website">
   <main>
-    <p>Hello Future Creators!</p>
-    <Card
-      href="https://uafc.ca/"
-      title="Old UAFC Website"
-      body="You can click this link to view the old UAFC website"
-    />
+    <div class="text-5xl my-6">Hello Future Creators!</div>
+    <div class="flex gap-4">
+      <Card
+        href="https://uafc.ca/"
+        title="Old UAFC Website"
+        body="You can click this link to view the old UAFC website"
+      />
+      <Card
+        href="/about"
+        title="About Page"
+        body="You can click this link to view the About page!"
+      />
+    </div>
   </main>
 </Layout>
