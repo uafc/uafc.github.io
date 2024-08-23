@@ -50,9 +50,10 @@ import Footer from "../components/Footer.astro";
             rows="10" 
             required></textarea>
         </div>
-        <button 
-          type="submit" 
-          class="w-full bg-sky-950 text-white py-3 rounded-lg hover:bg-blue-700 transition duration-200">Submit</button>
+        <button type="submit" class="w-full bg-sky-950 text-white py-3 rounded-lg hover:bg-blue-700 transition duration-200">Submit</button>
+        <input type="hidden" name="_next" value="https://www.uafc.ca/">
+        <!-- disables captcha -->
+        <input type="hidden" name="_captcha" value="false">
       </form>
     </div>
   </main>
