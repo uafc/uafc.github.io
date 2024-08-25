@@ -1,15 +1,21 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro"
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Future Creators | Mentees">
+  <Navbar/>
   <main>
-    <Navbar/>
     <p>Mentees page of Future Creators Website</p>
     <a href="/" class="underline text-blue-600"
       >Go back to home page
       <span>&rarr;</span>
     </a>
+    <div>
+      <a href="https://forms.gle/CNhHZ7cnKeUSCPDy9" class="bg-sky-950 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-200 text-center inline-block">PRE-SIGN UP NOW!</a>
+    </div>
+    <br>
   </main>
+  <Footer/>
 </Layout>
