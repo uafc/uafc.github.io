@@ -2,16 +2,81 @@
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro"
 import Footer from "../components/Footer.astro";
+import Project_Card from "../components/Project_Card.astro";
 ---
 
 <Layout title="Future Creators | Projects">
   <Navbar/>
   <main>
-    <p>Projects page of Future Creators Website</p>
-    <a href="/" class="underline text-blue-600"
-      >Go back to home page
-      <span>&rarr;</span>
-    </a>
+
+    <!-- Title -->
+    <h1 class="pt-6 text-3xl font-bold text-center mb-8">Our Current Projects</h1>
+
+
+    <!-- Project Cards -->
+
+    <div class = "pb-6 mt-8 grid lg:grid-cols-3 gap-10">
+
+      <!-- Stream Deck -->
+      <Project_Card title="Stream Deck", my_img="src/img/stream-deck-mk2-slider-02.jpg", alt_name = "Stream Deck", body="The Stream Deck project combines knowledge from Arduino and Python to create an interactive experience for mentees! A Stream Deck is a customizable control panel that can be used to perform basic functions on your computer. In this project, mentees will start with learning the fundamentals of Arduino by creating a blinking LED circuit. This will be followed up with learning how to use a basic Arduino keypad. With this knowledge, mentees will then create a simple Python program that will allow them to perform basic functions on their computer such as pausing music or opening a website. This project combines the worlds of microcontrollers and programming to establish a broad range of skills that can be applied to many ideas you can think of!"></Project_Card>
+
+      <!-- Kahoot -->
+      <Project_Card title="Webscraping: The Kahoot Project", my_img="src/img/kahoot-premium-for-schools-blog.jpg", alt_name="Kahoot Project", body="In the Kahoot Web Scraping Game, we will putting our own unique spin onto the popular Kahoot style quizzing game, and we will be utilizing the Python programming language to do so. In this project we will create a quiz game by scraping data from trivia websites, to be used as questions within our game. This project provides an opportunity for mentees to acquire valuable skills in Python programming, such as: web scraping, data cleaning and extraction, and GUI (Graphical User Interface) creation. In addition to the topics mentioned previously, this project also introduces an overview of basic Python programming syntax and fundamental concepts such as functions, indexing, and data types like dictionaries and lists." >
+      </Project_Card>
+
+
+    </div>
+
+    <!-- Title -->
+    <h1 class="pt-6 text-3xl font-bold text-center mb-8">Our Past Projects</h1>
+
+    <div class = "pb-6 mt-8 grid lg:grid-cols-3 gap-10">
+
+      <!-- Robotic Arm -->
+      <Project_Card title="Robotic Arm", my_img="src/img/Robots-are-taking-over.jpeg", alt_name = "Robotic Arm", body="In the Robotic Arm Project, we create an interactive mechanical arm with 3 axis of rotation to lift and move items around. We learn the fundamentals of programming in C/C++ using the Arduino IDE to code desired movement with servo motors, based on keyboard input, and how to wire/connect the motors to the Arduino board. To design the arm, we will introduce basic CAD techniques to visualize prototypes with proper scaling."></Project_Card>
+      
+      <!-- Ultrasonic Sensor Catapult -->
+      <Project_Card title="Ultrasonic Sensor Catapult", my_img="src/img/unsplash-image-eybM9n4yrpE.jpg", alt_name = "Ultrasonic Sensor Catapult", body="In the Ultrasonic Sensor Catapult project, we combine Arduino coding and hardware. We build a catapult and launch a projectile at an object detected within range. Using an ultrasonic sensor and Arduino, including the integration of both visual and auditory signals, an object within range is identified and targeted. This ultimately enables the catapult arm to rise, rotate and release a projectile."></Project_Card>
+
+      <!-- Weather Station -->
+      <Project_Card title="Weather Station", my_img="src/img/unsplash-image-zWUTXNNwU3A.jpg", alt_name = "Weather Station", body="In this project we combine Arduino software and hardware to create a weather station. Beginning with an introduction to Arduino coding, we’ll then start breadboarding, wiring and learning the basics of printing messages to a LCD (liquid crystal display). We will finish with utilizing sensors, resistors, receivers and transmitters, as well as integrating the LCD into our circuit. By the end of the project you’ll have a weather station that displays temperatures, heat index and humidity."></Project_Card>
+
+      <!-- Solar Charger -->
+      <Project_Card title="Solar Charger", my_img="src/img/unsplash-image-hxUcl0nUsIY.jpg", alt_name = "Solar Charger", body="This project lights up a LED bulb using solar panels for power. It uses two photoresistors and a code that controls a servo motor to move the solar panels to gather as much light as possible. With the code, photoresistors, and motor, maximum energy is used to power the light bulb! On top of the coding, the project also features electrical wiring!"></Project_Card>
+
+      <!-- Raspberry-Pi DNS Filter -->
+      <Project_Card title="Raspberry-Pi DNS Filter", my_img="src/img/unsplash-image-8bghKxNU1j0.jpg", alt_name = "Raspberry-Pi DNS Filter", body="In the Raspberry-Pi DNS filter, we will introduce how DNS service works and the Linux-based operating system. We will give you a tour of the Raspbian system and install the Pi-hole on your Raspberry Pi using basic terminal commands. We will then help you deploy Pi-hole on your network or on your devices to get rid of annoying ads."></Project_Card>
+
+
+      <!-- Mini Wind Turbine -->
+      <Project_Card title="Mini Wind Turbine", my_img="src/img/unsplash-image-MvgLQ_4kr3E.jpg", alt_name = "Mini Wind Turbine", body="In the Mini Wind Turbine Charger, we learn the very basics of Arduino coding: functions, variables and the structure of the code. We go from lighting an LED to coding for a voltage sensor and understanding the onboard ADC (analog to digital convertor). Furthermore, the project moves to investigate the workings of a wind turbine, the major differences between HAWT (Horizontal Axis) and VAWT (Vertical Axis Wind Turbine). Then finally when we have all that knowledge, we go hands-on to design and build our own HAWT/VAWT, light an LED and measure the voltage it produces using our Arduino voltage sensor!"></Project_Card>
+
+      <!-- Machine Learning Penguin Game -->
+      <Project_Card title="Machine Learning Penguin Game", my_img="src/img/unsplash-image-f57lx37DCM4.jpg", alt_name = "Machine Learning Penguin Game", body="Learn reinforcement learning in Unity's MLAgents and build it into your own penguin game. This project will teach you game development and how to use Unity's machine learning library to have the gameplay itself. Using reinforcement learning, we can train our mother penguin to move on her own and catch as many fish as she can to feed the baby penguin. The whole process is done by computer without any human control."></Project_Card>
+
+      <!-- Personal Website -->
+      <Project_Card title="Personal Website", my_img="src/img/web.png", alt_name = "Personal Website", body="In this project, we will use frontend technologies such as HTML, CSS, and Figma to design and build a personal website. We will be using HTML to create the skeleton of our website, CSS to style the appearance of our website, and Figma to create mock versions of our webpages."></Project_Card>
+
+      <!-- Arcade Game v1. -->
+      <Project_Card title="Arcade Game v1.", my_img="src/img/aedrian-mSS2r9_RGgA-unsplash.jpg", alt_name = "Arcade Game v1.", body="In this project, we will learn the basics of Arduino coding and circuits. We will use an 8x8 LED matrix display to create an arcade stacking game. We can program the Arduino to start stacking by using a physical push button."></Project_Card>
+
+      <!-- The Pygame Project: Pong -->
+      <Project_Card title="The Pygame Project: Pong", my_img="src/img/pong-2061682_1280.jpg", alt_name = "The Pygame Project: Pong", body="The Pygame Project is a fun and interactive introduction to the Python programming language. In this project, mentees will first begin to learn the basics of Python programming such as data types and basic syntax. They will practice this new found knowledge in examples of simple programs designed to help them learn how to use these data types and structures. The main part of this project will be the Pong game that they make using Python's Turtle module. Here, mentees will familiarize themselves with creating programs and have the chance to create a small game that they can play with a friend. This project will be taught with Object Oriented Programming design principles in mind, to give mentees a small but in depth introduction into the exciting world of programming."></Project_Card>
+
+      <!-- Arcade Game v2. -->
+      <Project_Card title="Arcade Game v2.", my_img="src/img/slacker.png", alt_name = "Arcade Game v2.", body="In this comprehensive project, our main objective is to explore Arduino programming and electronic circuits while creating an engaging arcade stacking game using an 8x8 LED matrix display. We'll utilize the Arduino microcontroller to define the game's mechanics, allowing players to balance and stack objects on the LED matrix. To enhance user engagement, a physical push button will be integrated, enabling players to initiate the stacking process. As we delve deeper, we'll discover various coding techniques, from LED manipulation to animation creation and user input response, building a strong foundation for future Arduino projects."></Project_Card>
+
+
+    </div>
+
+
+    <!-- Return Home Link -->
+
+    <div class="pb-6 card-actions justify-right">
+      <button class="btn btn-primary", onclick="location.href='/'">Go back to home page</button>
+    </div>
+
   </main>
   <Footer/>
+  
 </Layout>
