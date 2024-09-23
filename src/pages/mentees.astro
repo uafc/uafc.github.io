@@ -4,13 +4,84 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Future Creators | Mentees">
   <main>
-    <p>Mentees page of Future Creators Website</p>
-    <a href="/" class="underline text-blue-600"
-      >Go back to home page
-      <span>&rarr;</span>
-    </a>
-    <div>
-      <a href="https://forms.gle/CNhHZ7cnKeUSCPDy9" class="bg-sky-950 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-200 text-center inline-block">PRE-SIGN UP NOW!</a>
+    <br>
+    <!-- first card/section -->
+    <div class="card bg-stone-200 lg:card-side bg-base-100 shadow-xl">
+      <figure>
+        <img
+          src="/src/img/mentees1.jpg"
+          alt="Picture of a Mentee!" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title text-2xl">Join as a mentee!</h2>
+        <b class="text-lg">Do you have a passion to learn about engineering and technology?</b>
+        <p class="text-lg">Through Future Creators, you have the opportunity to be paired with mentors to help you build your very own technology project—anything from a robot car to a video game with a machine learning AI penguin—through a once a week digital mentorship program. It’s <b>completely free!</b></p>
+      </div>
+    </div>
+    <br>
+    <!-- second card/section -->
+     <!-- flexible container for the card and the text box -->
+    <div class="flex justify-between items-start space-x-4">
+      <!-- left side card w/ image -->
+      <div class="w-1/2">
+        <div class="card bg-stone-200 bg-base-100 shadow-xl">
+          <div class="card-body">
+            <h2 class="card-title text-2xl">Our Mentee Process</h2>
+            <p class="text-lg">It all begins with an idea. Maybe you want to launch a website. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, we can help make it a reality.</p>
+          </div>
+          <figure>
+            <img
+              src="/src/img/mentees2.jpeg"
+              alt="A picture of one of our mentees!"
+              class="object-cover w-full"
+              style="height: 30rem; width: 30rem;"/>
+          </figure>
+        </div>
+      </div>
+      <!-- right side text box area -->
+       <!-- the code below is very janky, will need to fix in the future -->
+      <div class="card w-1/2 bg-white p-6 shadow-xl text-center bg-stone-200 h-full"
+      style="height: 41.5rem;"
+      >
+        <h2 class="text-3xl font-bold mb-4">1. Apply</h2>
+        <p class="text-lg">
+          Apply using our form below. Our program has limited capacity, we will determine your acceptance into a mentorship program based on your responses in the application.
+        </p>
+        <br>
+        <br>
+        <br>
+        <h2 class="text-3xl font-bold mb-4">2. Build It</h2>
+        <p class="text-lg">
+          You will be matched with mentors University of Alberta engineering students and the tools required to build your project will be delivered right to your house. Also, the project kit is totally free!
+        </p>
+        <br>
+        <br>
+        <br>
+        <h2 class="text-3xl font-bold mb-4">3. Have Fun Learning</h2>
+        <p class="text-lg">
+          Through digital mentorship sessions with your project group, your mentors will help you gain knowledge and walk you through building your project step by step—and you get to keep it when you’re done!
+        </p>
+      </div>
+    </div>
+    <br>
+    <!-- third card/section -->
+    <div class="card bg-slate-500 lg:card-side bg-base-100 shadow-xl">
+      <figure>
+        <img
+          src="/src/img/mentees3.jpg"
+          alt="Picture of a Mentee!"
+          style="height: 25rem; width: 25rem;"
+          />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title text-2xl">Become A Mentee.</h2>
+        <span class="text-lg">Our Winter 2024 Mentorship has already begun and applications are now CLOSED.</span>
+        <span class="text-lg">But don’t worry, pre sign-up for our Fall 2024 Mentorship Sessions and we will email you when applications officially open!</span>
+        <br>
+        <br>
+        <br>
+        <a href="https://forms.gle/CNhHZ7cnKeUSCPDy9" target="_blank" class="bg-sky-950 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-200 text-center inline-block">PRE-SIGN UP NOW!</a>
+      </div>
     </div>
     <br>
   </main>
