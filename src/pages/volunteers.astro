@@ -99,6 +99,7 @@ import Layout from "../layouts/Layout.astro";
                   name="role" 
                   class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" 
                   required>
+                  <!-- need to figure out how to have this always up to date, or we have to manually change it as our needs change-->
                   <option value="" disabled selected>Select an option</option>
                   <option value="VP Mentorship">VP Mentorship</option>
                   <option value="VP Logistics">VP Logistics</option>
@@ -121,6 +122,7 @@ import Layout from "../layouts/Layout.astro";
             Sign Up
           </button>
           <input type="hidden" name="_next" value="https://www.uafc.ca/">
+          <!-- disables captcha -->
           <input type="hidden" name="_captcha" value="false">
         </form>
       </div>
