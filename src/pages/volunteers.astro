@@ -1,96 +1,132 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Navbar from "../components/Navbar.astro"
-import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Future Creators | Volunteers">
-  <Navbar/>
   <main>
-    <p>Volunteers page of Future Creators Website</p>
-    <a href="/" class="underline text-blue-600"
-      >Go back to home page
-      <span>&rarr;</span>
-    </a>
-    <div class="container mx-auto max-w-lg">
-      <h1 class="text-3xl font-bold text-center mb-8">Become a Volunteer!</h1>
-      <form 
-        target="_blank" 
-        action="https://formsubmit.co/8b32bdecaca8eea4663458bd92f64c0f" 
-        method="POST" 
-        class="bg-white p-8 rounded-lg shadow-md border border-gray-400">
-        <div class="mb-6">
-          <div class="flex flex-col gap-4">
-            <div>
-              <h2 class="font-semibold mb-2">Full Name (required)</h2>
-              <input 
-                type="text" 
-                name="name" 
-                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" 
-                placeholder="Full Name" 
-                required/>
-            </div>
-            <div>
-              <h2 class="font-semibold mb-2">(School) Email (required)</h2>
-              <input 
-                type="email" 
-                name="email" 
-                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" 
-                placeholder="Email" 
-                required/>
-            </div>
-            <div>
-              <h2 class="font-semibold mb-2">Faculty (required)</h2>
-              <input 
-                type="text" 
-                name="faculty" 
-                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" 
-                placeholder="E.g. Engineering, Sciences, Business, Arts ..." 
-                required/>
-            </div>
-            <div>
-              <h1 class="font-semibold mb-2">Year (required)</h1>
-              <input 
-                type="text" 
-                name="year" 
-                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" 
-                placeholder="E.g. Second Year" 
-                required/>
-            </div>
-            <div>
-              <h2 class="font-semibold mb-2">What are you interested in? (required)</h2>
-              <select 
-                name="role" 
-                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" 
-                required>
-              <!-- need to figure out how to have this always up to date, or we have to manually change it as our needs change-->
-                <option value="" disabled selected>Select an option</option>
-                <option value="VP Mentorship">VP Mentorship</option>
-                <option value="VP Logistics">VP Logistics</option>
-                <option value="VP Marketing">VP Marketing</option>
-                <option value="Project Development">Project Development</option>
-              </select>
+    <br>
+
+    <div class="card bg-stone-200 lg:card-side bg-base-100 shadow-xl">
+      <div class="card-body">
+        <h2 class="card-title text-3xl">Join as a volunteer.</h2>
+        <b class="text-lg">Do you have a passion for engineering and technology?</b>
+        <span class="text-lg">Sign up on our form and we will reach out to chat with you. Even if you've never built a technology project before, no need to worry! We provide all the training and guidance you need. For more challenging projects, you will also have access to our University of Alberta Engineering Faculty partners for support.</span>
+        <br>
+        <p class="text-lg">We welcome students outside the engineering faculty as well! We have roles including everything from outreach and marketing to finance and business, and we'd love to have you on our team.</p>
+      </div>
+      <figure>
+        <img
+          src="/src/img/volunteerPage/volunteer1.jpg"
+          alt="Picture of one of our volunteers!" />
+      </figure>
+    </div>
+
+    <br>
+    <div class="container mx-auto flex bg-stone-200 p-8">
+      <div class="w-1/3 p-4">
+        <h2 class="font-semibold mb-2 text-5xl">What Do Volunteers Do?</h2>
+        <span class="text-lg">Join the team using the form below!</span>
+      </div>
+      <div class="w-1/3 p-4">
+        <h2 class="font-semibold mb-2 text-3xl">Mentor</h2>
+        <span class="text-lg">You and a partner will be matched with students in grades 5-12 to provide after school mentorship and help them build their projects.</span>
+      </div>
+      <div class="w-1/3 p-4">
+        <h2 class="font-semibold mb-2 text-3xl">Developer</h2>
+        <span class="text-lg">Developers create new project ideas, from drones to robotic arms to machine learning and everything between.
+          <br>
+          <br>
+          (We are currently not recruiting for developers at this time)</span>
+      </div>
+    </div>
+    
+    <div class="container mx-auto flex bg-slate-500">
+      <div class="w-1/2">
+        <img 
+          src="/src/img/volunteerPage/volunteer2.png" 
+          alt="Volunteer" 
+          class="w-full h-full object-cover" />
+      </div>
+
+      <div class="w-1/2 bg-slate-500 p-8 text-white">
+        <h1 class="text-3xl font-bold text-center mb-8">Become a Volunteer!</h1>
+        <span class="text-lg font-bold text-center mb-8">Sign up now and we’ll help you onboard!</span>
+        <form 
+          target="_blank" 
+          action="https://formsubmit.co/8b32bdecaca8eea4663458bd92f64c0f" 
+          method="POST">
+          <div class="mb-6">
+            <div class="flex flex-col gap-4">
+              <div>
+                <h2 class="font-semibold mb-2">Full Name (required)</h2>
+                <input 
+                  type="text" 
+                  name="name" 
+                  class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" 
+                  placeholder="Full Name" 
+                  required/>
+              </div>
+              <div>
+                <h2 class="font-semibold mb-2">(School) Email (required)</h2>
+                <input 
+                  type="email" 
+                  name="email" 
+                  class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" 
+                  placeholder="Email" 
+                  required/>
+              </div>
+              <div>
+                <h2 class="font-semibold mb-2">Faculty (required)</h2>
+                <input 
+                  type="text" 
+                  name="faculty" 
+                  class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" 
+                  placeholder="E.g. Engineering, Sciences, Business, Arts ..." 
+                  required/>
+              </div>
+              <div>
+                <h1 class="font-semibold mb-2">Year (required)</h1>
+                <input 
+                  type="text" 
+                  name="year" 
+                  class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" 
+                  placeholder="E.g. Second Year" 
+                  required/>
+              </div>
+              <div>
+                <h2 class="font-semibold mb-2">What are you interested in? (required)</h2>
+                <select 
+                  name="role" 
+                  class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" 
+                  required>
+                  <!-- need to figure out how to have this always up to date, or we have to manually change it as our needs change-->
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="VP Mentorship">VP Mentorship</option>
+                  <option value="VP Logistics">VP Logistics</option>
+                  <option value="VP Marketing">VP Marketing</option>
+                  <option value="Project Development">Project Development</option>
+                </select>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="mb-6">
-          <h2 class="font-semibold mb-2">Anything else you would like us to know?</h2>
-          <textarea  
-            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" 
-            name="message" 
-            rows="10"></textarea>
-        </div>
-        <button 
-          type="submit" 
-          class="w-full bg-sky-950 text-white py-3 rounded-lg hover:bg-blue-700 transition duration-200">
-          Sign Up
-        </button>
-        <input type="hidden" name="_next" value="https://www.uafc.ca/">
-        <!-- disables captcha -->
-        <input type="hidden" name="_captcha" value="false">
-      </form>
+          <div class="mb-6">
+            <h2 class="font-semibold mb-2">Anything else you would like us to know?</h2>
+            <textarea  
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" 
+              name="message" 
+              rows="10"></textarea>
+          </div>
+          <button 
+            type="submit" 
+            class="w-full bg-sky-950 text-white py-3 rounded-lg hover:bg-blue-700 transition duration-200">
+            Sign Up
+          </button>
+          <input type="hidden" name="_next" value="https://www.uafc.ca/">
+          <!-- disables captcha -->
+          <input type="hidden" name="_captcha" value="false">
+        </form>
+      </div>
     </div>
     <br>
   </main>
-  <Footer/>
 </Layout>
