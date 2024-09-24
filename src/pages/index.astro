@@ -1,22 +1,51 @@
 ---
+import YoutubeEmbedCard from "../components/YoutubeEmbedCard.astro";
+import Button from '../components/Button.astro';
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 ---
 
 <Layout title="Future Creators Website">
-  <main>
-    <div class="text-5xl my-6">Hello Future Creators!</div>
-    <div class="flex gap-4">
-      <Card
-        href="https://uafc.ca/"
-        title="Old UAFC Website"
-        body="You can click this link to view the old UAFC website"
-      />
-      <Card
-        href="/about"
-        title="About Page"
-        body="You can click this link to view the About page!"
-      />
+  <main class="flex flex-col gap-y-8">
+
+    <figure class="relative w-screen left-1/2 right-1/2 -mx-[50vw]">
+        <img class="object-cover" src="src/img/homepage_vid.png", alt="Future Creators Home Page Background"/>
+    </figure>
+
+    <div class="text-5xl my-6">Empowering youth to create their own technological project.</div>
+
+    <div class="container mx-auto flex bg-stone-200 p-8">
+      <div class="w-1/3 p-4">
+        <h2 class="font-semibold mb-2 text-5xl">What we do.</h2>
+      </div>
+      <div class="w-2/3 p-4">
+        <h2 class="font-semibold mb-2 text-3xl">Make a difference!</h2>
+        <span class="text-lg">Future Creators has mentored over 200 grade 7-12 students from all across Canada, helping them build everything from solar chargers to Bluetooth-controlled robot cars to machine learning video games for free. Join our program, and you'll also have a shot at the Innovation Awards—cash prizes given out each mentorship round to three mentees who can make the most innovative additions onto their project! Join us on our mission to help empower young innovators find their passion for technology.</span>
+      </div>
+    </div>
+
+    <div class="text-5xl my-6 bg-sky-950 flex justify-around items-center p-8">
+      <YoutubeEmbedCard videoId="ArPjjYSucjQ" title="UAFC on CTV News Pt. 1" />
+      <YoutubeEmbedCard videoId="ua_zbDPPqNA" title="UAFC on CTV News Pt. 2" />
+    </div>
+
+    <div class="text-5xl mt-6 my-12 bg-zinc-800 flex justify-around items-center p-12 gap-x-12">
+      <div>
+        <img class="object-cover" src="src/img/IMG-6260.jpg", alt="Future Creators Home Page Background"/>
+        <br>
+        <div class="text-white">Prospective Volunteers.</div>
+        <br>
+        <div class="text-white text-lg">If you’re passionate about technology and engineering and want to help develop projects or mentor youth to build their own projects, we’d love to have you on the team! <br><br> Similarly, we also have positions on our business team - roles ranging from finance, logistics, to outreach/marketing!.</div>
+        <br>
+        <Button text="Become a volunteer" href="/volunteers" />
+      </div>
+      <div>
+        <img class="object-cover" src="src/img/IMG-6263.jpg", alt="Future Creators Home Page Background"/>
+        <br>
+        <div class="text-white">Prospective Mentees.</div>
+        <br>
+        <div class="text-white text-lg">If you’re a student in grades 5-12 who has a passion for technology, sign up here to build your own free technology project of your choice with guidance from university engineering students!</div>
+        <Button text="Become a mentee" href="/mentees" />
+      </div>
     </div>
   </main>
 </Layout>
