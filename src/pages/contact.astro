@@ -4,18 +4,40 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Future Creators | Contact">
   <main>
-    <p>Contact page of Future Creators Website</p>
-    <a href="/" class="underline text-blue-600"
-      >Go back to home page
-      <span>&rarr;</span>
-    </a>
-    <div class="container mx-auto p-8 max-w-lg">
+    <br>
+    <div class="container mx-auto p-8 max-w-lg bg-stone-200 rounded-lg">
       <h1 class="text-3xl font-bold text-center mb-8">Contact Us</h1>
+      <span class="text-lg text-center mb-8">Reach out to us using the form and we’ll get right back to you!</span>
+      <br> <br>
+      <span class="text-lg text-center mb-8">You can also contact us through our socials linked below!</span>
+      <br> <br>
+      <div class="flex space-x-4 justify-center">
+        <a href="https://instagram.com/futurecreatorsuofa" target="_blank">
+          <img src="/src/img/contactPage/instagram.svg" alt="Instagram" class="h-8 w-8 hover:opacity-75">
+        </a>
+        <a href="https://www.facebook.com/uafuturecreators" target="_blank">
+          <img src="/src/img/contactPage/facebook.svg" alt="Facebook" class="h-8 w-8 hover:opacity-75">
+        </a>
+        <a href="https://twitter.com/_uafc" target="_blank">
+          <img src="/src/img/contactPage/twitter.svg" alt="Twitter" class="h-8 w-8 hover:opacity-75">
+        </a>
+        <a href="https://www.linkedin.com/company/ualberta-future-creators/" target="_blank">
+          <img src="/src/img/contactPage/linkedin.svg" alt="LinkedIn" class="h-8 w-8 hover:opacity-75">
+        </a>
+        <a href="https://www.youtube.com/channel/UC9fviTxM6vdBN8gz-C9dIJA" target="_blank">
+          <img src="/src/img/contactPage/youtube.svg" alt="YouTube" class="h-8 w-8 hover:opacity-75">
+        </a>
+        <a href="mailto:uafc@ualberta.ca" target="_blank">
+          <img src="/src/img/contactPage/mail.svg" alt="Email" class="h-8 w-8 hover:opacity-75">
+        </a>
+      </div>
+      <br>
+  
       <form 
         target="_blank" 
         action="https://formsubmit.co/8b32bdecaca8eea4663458bd92f64c0f" 
         method="POST" 
-        class="bg-white p-8 rounded-lg shadow-md border border-gray-400">
+        class="bg-white p-8 rounded-lg shadow-md border border-stone-200">
         <div class="mb-6">
           <div class="flex flex-col md:flex-row gap-4">
             <div class="flex-1">
@@ -53,5 +75,7 @@ import Layout from "../layouts/Layout.astro";
         <input type="hidden" name="_captcha" value="false">
       </form>
     </div>
+    
+    
   </main>
 </Layout>
