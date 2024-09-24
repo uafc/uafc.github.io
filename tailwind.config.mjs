@@ -4,5 +4,11 @@ export default {
 	theme: {
 		extend: {},
 	},
-	plugins: [],
+	plugins: [
+		require('daisyui'),
+	],
+	daisyui: {
+		darkTheme: "light",
+	   },
+	//    above code reverts back to light mode, in daisyUI the defauly is dark mode
 }
